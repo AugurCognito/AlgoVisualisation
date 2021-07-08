@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #FBFBFD;
+}
+
+.title{
+    text-align:center;
+    margin: 10px auto; 
+    font-size: 13px; 
+    color: #1E1E1E; 
+    font-weight: 600;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px 7.8vw;
+}
+
+.right{
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    flex-grow: 2;
+}
+.left{
+    width: 600px;
+}
+.left h1{
+    color: #1E1E1E;
+    margin-top: 9.6vw;
+    margin-bottom: 22px;
+    font-size: 24px;
+    margin-left: 10px;
+    font-weight: 700;  
+}
+.algoCont{
+    margin-top: -18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100px;
+    width: 250px;
+}
+.algoName{
+    border-radius: 20px;
+    justify-content: centersssssss;
+    margin: 5px;
+    color: #b1361e;
+    border: 1px solid #b1361e;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center; 
+    padding-top: 9px;
+    height: 28px;  
+    cursor: pointer;
+}
+.algoName:hover {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: none;
+    
+    
+}
+.algoName:active {
+    transform: translateX(10px);
+}
+/* Because google js :/ */
+.prettyprint{
+    border: 0 !important;
+    background-color: unset !important;
+} 
+.output p{
+    font-size: 15px;
+    font-weight: 700;
+    margin: -5px 5px;
+    background-color: #0e0e10;
+    color: #ffffff;
+    border: 1px solid #802a19;
+    border-radius: 5px 5px 0 0;
+    height: 30px;
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-top: 5px;
+
+}
+.algoList{
+    display: flex;
+    border: 1px solid #802a19;
+    border-top: none;
+    padding-left: 20px;
+    background-color: #18181b;
+    box-sizing: border-box;
+    margin: 5px 5px;
+    height: 40px;
+    border-radius: 0 0 5px 5px;
+} 
+.elem{
+    transition: 1s;
+    margin: 10px;
+    color: #BBBBBB;
+    font-weight: bolder;
+    font-family:"IBM Plex Mono", monospace;
+}
+.code-header {
+    height: 35px;
+    background-color: #0e0e10;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 1px solid #802a19;
+}
+.dots{
+    position: relative;
+    left: 10px;
+    margin-left: 4px;
+    padding-top: 5px;
+}
+.code {
+    border: 1px solid #802a19;
+    background-color: #18181b;
+    color:#BBBBBB;
+    border-radius: 4px;
+    margin-left: 5px;
+    height: 420px;
+    position: relative;
+}
+.inputField{
+    width: 95%;
+    margin:auto;
+}
+.array{
+   color:#3387CC; 
+}
+.run{
+    border: 1px solid #3180c1;
+    font-size: 10px;
+    position: relative;
+    top: 6px;
+    right: 20px;
+    padding: 2px;
+    font-size: 13px;
+    text-align: center;
+    background-color: #18181b;
+    color: #3180c1;
+    position: absolute;
+    cursor: pointer;
+    user-select: none;
+}
+.run:active {
+    transform: translateX(1px);
+}
+.run img{
+    width: 12px;
+    height: 10px;
+}
+hr{
+    margin-top: 0;
+    color: #BBBBBB;
+}
+.code-content{
+    margin-top: 50px;
+}
+.footer{
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.logos ul{
+	box-sizing: border-box;
+	display: inline;
+}
+.logos ul li{
+	width: 40px;
+	display: inline-block;
+	padding-right: 40px;
+    cursor: pointer;
+}
+.footer hr{
+	opacity: 0.7;
+    width: 320px;
+}
+.footer h3{
+    top: 15px;
+    position: relative;
+    color: #1E1E1E;
+}
+.footer h6{
+	position: relative;
+    bottom: 20px;
+	opacity: 0.7;
+	font-weight: 600;
+}
+
+@media (max-width: 375px){
+    .logos ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer hr{
+        opacity: 0.7;
+        width: 25vw;
+    }
+}
