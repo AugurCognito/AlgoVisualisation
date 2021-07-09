@@ -1,0 +1,139 @@
+/* the flexbox just below the title */
+
+.main-description{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border: 2px solid red;
+}
+.scroll-down{
+	width: 300px;
+	border: 2px solid red;
+	padding: 0;
+	margin: 0;
+}
+.paragraph{
+	width: 400px;
+	height: 100px;
+	border: 2px solid red;
+}
+
+/* next section about the sorting */
+.heading{
+	border: 2px solid red;
+	width: 200px;
+	font-size: 12px;
+	margin: 60px auto;
+	/* margin-top: 60px; */
+}
+
+/* page transition use as list items */
+.pages{
+	border: 2px solid red;
+	margin: 50px auto;
+	padding: 0;
+	text-align: center;
+	width: max-content;
+	list-style-type: none;
+}
+.sorting-type{
+	border: 2px solid red;
+}
+h1{
+	font-size: 50px;
+	font-family: Bebas Neue;
+}
+.sorting-type p{
+	padding: 20px;
+	margin: 0 auto;
+	border: 2px solid red;
+}
+
+/* For testing purposes */
+.body {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	height: auto;
+}
+  
+  .container {
+	display: flex;
+	flex-direction: column;
+	max-width: 980px;
+	margin:0 auto;
+	margin-top: 150px;
+	/* height: 2000px; */
+	/* margin-bottom: -100px; */
+	padding-bottom: 100px;
+	border: 2px solid red;
+  }
+  
+  .rect {
+	
+	width: 200px;
+	height: 100px;
+	/* background-size: cover; */
+	border: 1px solid red;
+	position: sticky;
+	will-change: transform;
+	top: 100px;
+	margin-left: 50%;
+	transform: skew(-7deg, 5deg);
+	transition: all 0.35s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+	/* box-shadow: 0 0 25px rgba(0, 0, 0, 0.05); */
+	display: flex;
+	flex-direction: column;
+  }
+  .visualise{
+	  width: 300px;
+	  height: 100px;
+	  border: 2px solid green;
+	  grid-template-columns: 1fr 1fr;
+  }
+  .rect .small {
+	width: 300px;
+	/* height: 300px; */
+	/* position: absolute; */
+	background-color: yellow;
+	bottom: -20px;
+	left: 50%;
+	/* right: 50%; */
+	transform: translateX(-50%);
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+	opacity: 1;
+  }
+  
+  .text {
+	width: 60%;
+	margin-top: 300px;
+	color: white;
+	font-family: arial;
+	border: 2px solid red;
+  }
+  .text.left {
+	  /* margin-top: -200px; */
+	  text-align: left;
+	margin-right: auto;
+	margin-left: 0;
+  }
+  .text.right {
+	/* margin-top: 380px; */
+	text-align: right;
+	margin-right: 0;
+	margin-left: auto;
+  }
+  .text#first {
+	margin-top: -100px;
+	border: 2px solid red;
+  }
+  .text#last {
+	margin-bottom: 150px; 	
+	border: 2px solid red ;
+  }
+  
+  .rect {
+	background-image: url("./media/go-to-button.svg");
+  }
