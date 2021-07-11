@@ -6,7 +6,7 @@ window.onscroll = function (e) {
 	  goRight()
 	  smallScreen.style.backgroundColor = "blue"
 	}
-	if(pos > 700) {
+	if(pos > 750) {
 		goLeft()
 		smallScreen.style.backgroundColor = "purple"
 	  }  
@@ -32,7 +32,7 @@ window.onscroll = function (e) {
   function goRight() {
 	const el = document.getElementById('sticky');
 	el.style.transform = "skew(-7deg, 5deg)"
-	el.style.marginLeft = "50%"
+	el.style.marginLeft = "60%"
   }
   function goLeft() {
 	const el = document.getElementById('sticky');

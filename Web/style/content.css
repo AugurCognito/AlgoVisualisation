@@ -3,8 +3,9 @@
 .main-description{
 	padding: 0;
 	margin: 0;
+	margin-top: 100px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	justify-content: space-around;
 	border: 2px solid red;
 }
@@ -13,42 +14,35 @@
 	border: 2px solid red;
 	padding: 0;
 	margin: 0;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
 }
 .paragraph{
+	position: relative;
+	margin-top: 100px 	;
 	width: 400px;
-	height: 100px;
+	height: 120px;
 	border: 2px solid red;
+	font-size: 18px;
+	font-family: 'Lora', serif;
 }
 
 /* next section about the sorting */
 .heading{
 	border: 2px solid red;
-	width: 200px;
-	font-size: 12px;
-	margin: 60px auto;
+	width: max-content;
+	font-size: 10px;
+	color: white;
+	margin: 50px auto;
+	margin-bottom: 0;
+	font-family: 'Sarabun', sans-serif;
+	font-weight:lighter;
+	/* text-align: left; */
 	/* margin-top: 60px; */
 }
-
-/* page transition use as list items */
-.pages{
-	border: 2px solid red;
-	margin: 50px auto;
-	padding: 0;
-	text-align: center;
-	width: max-content;
-	list-style-type: none;
-}
-.sorting-type{
-	border: 2px solid red;
-}
-h1{
-	font-size: 50px;
-	font-family: Bebas Neue;
-}
-.sorting-type p{
-	padding: 20px;
-	margin: 0 auto;
-	border: 2px solid red;
+.heading hr{
+	width: 75%;
 }
 
 /* For testing purposes */
@@ -57,73 +51,83 @@ h1{
 	margin: 0;
 	padding: 0;
 	height: auto;
+	margin-top: -100px;
 }
   
   .container {
 	display: flex;
 	flex-direction: column;
-	max-width: 980px;
+	max-width: 60vw;
 	margin:0 auto;
-	margin-top: 150px;
-	/* height: 2000px; */
-	/* margin-bottom: -100px; */
+	margin-top: 50px;
 	padding-bottom: 100px;
 	border: 2px solid red;
+	/* font-family: 'Bebas Neue', cursive; */
   }
   
   .rect {
 	
-	width: 200px;
-	height: 100px;
+	width: 300px;
+	height: auto;
 	/* background-size: cover; */
 	border: 1px solid red;
 	position: sticky;
 	will-change: transform;
 	top: 100px;
 	margin-left: 50%;
+	/* margin-top: 300px; */
 	transform: skew(-7deg, 5deg);
+	padding: 0;
 	transition: all 0.35s cubic-bezier(0.47, 1.64, 0.41, 0.8);
 	/* box-shadow: 0 0 25px rgba(0, 0, 0, 0.05); */
 	display: flex;
 	flex-direction: column;
+	mix-blend-mode: difference;
+	/* visibility: hidden; */
   }
   .visualise{
 	  width: 300px;
-	  height: 100px;
+	  height: 60px;
 	  border: 2px solid green;
-	  grid-template-columns: 1fr 1fr;
+	  isolation: isolate;
+	  visibility: visible;
   }
   .rect .small {
 	width: 300px;
-	/* height: 300px; */
+	height: 200px;
 	/* position: absolute; */
 	background-color: yellow;
 	bottom: -20px;
 	left: 50%;
-	/* right: 50%; */
-	transform: translateX(-50%);
+	/* transform: translateX(-50%); */
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
 	opacity: 1;
+	visibility: visible;
+	isolation: isolate;
   }
   
   .text {
-	width: 60%;
-	margin-top: 300px;
+	width: 50%;
+	margin-top: 200px;
+	/* padding: 10px; */
 	color: white;
 	font-family: arial;
 	border: 2px solid red;
   }
   .text.left {
-	  /* margin-top: -200px; */
+	  margin-top: 200px;
 	  text-align: left;
 	margin-right: auto;
 	margin-left: 0;
+	/* padding-left: 20px; */
+	/* border: 2px solid red; */
   }
   .text.right {
-	/* margin-top: 380px; */
+	margin-top: 200px;
 	text-align: right;
 	margin-right: 0;
 	margin-left: auto;
+	/* padding-right: 20px; */
   }
   .text#first {
 	margin-top: -100px;
@@ -133,7 +137,38 @@ h1{
 	margin-bottom: 150px; 	
 	border: 2px solid red ;
   }
-  
+  .text h1{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 50px;
+  }
   .rect {
 	background-image: url("./media/go-to-button.svg");
+  }
+  .text p{
+	  margin-top: -20px;
+	  font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* About page section */
+  .about{
+	  box-sizing: border-box;
+	  color: white;
+	  margin: 0 auto;
+	  border: 2px solid red;
+	  width: 50%;
+	  margin-top: -100px;
+  }
+  .about h2{
+	width: max-content;
+	font-family: 'Lato', sans-serif;
+	font-weight: 800;
+	margin: 0 auto;
+  }
+  .about p{
+	font-family: 'Lato', sans-serif;
+	font-weight: lighter; 
+  }
+  .about hr{
+	  width: 40%;
+	  
   }
