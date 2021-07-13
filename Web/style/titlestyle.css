@@ -4,20 +4,20 @@ body {
   font-style: normal;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
-  -webkit-font-kerning: normal;
-  -webkit-text-size-adjust: 100%;
+  /* -webkit-font-kerning: normal; */
+  /* -webkit-text-size-adjust: 100%; */
 }
 
 /* Nothing imp just viewbox */
 html,
 body {
   width: 100vw;
-  height: 100vh;
+  height: auto;
 }
 
 /* Background color and postioning in middle */
 body {
-  background: linear-gradient(45deg, #02001F, #1F1B4E);
+  background: linear-gradient(45deg, #001f15, #413f53);
   transform-style: preserve-3d;
   transform: perspective(60rem);
 }

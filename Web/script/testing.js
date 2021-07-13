@@ -2,30 +2,32 @@ window.onscroll = function (e) {
 	const smallScreen = document.getElementById('sticky');
 	var pos =  document.documentElement.scrollTop
 	console.log("pos", pos)
-	if(pos < 606) {
+	if(pos < 700) {
 	  goRight()
-	  smallScreen.style.backgroundColor = "blue"
+	  document.getElementById('small-screen').style.backgroundColor='green';
 	}
-	if(pos > 750) {
+	if(pos > 900) {
 		goLeft()
-		smallScreen.style.backgroundColor = "purple"
+		document.getElementById('small-screen').style.backgroundColor='red';
+
 	  }  
-	if(pos > 1158) {
+	if(pos < 1400) {
 		goRight()
-		smallScreen.style.backgroundColor = "purple"
+		document.getElementById('small-screen').style.backgroundColor='Blue';
+
 	  }  
 	if(pos > 1265) {
 		goLeft()
-		smallScreen.style.backgroundColor = "pink"
+		document.getElementById('small-screen').style.backgroundColor='purple';
 	  }
 	if(pos > 2170) {
 		goRight()
-		smallScreen.style.backgroundColor = "purple"
+		document.getElementById('small-screen').style.backgroundColor='yellow';
 	  }
 	
 	if(pos > 2600) {
 	  goLeft()
-	  smallScreen.style.backgroundColor = "purple"
+	  document.getElementById('small-screen').style.backgroundColor='brown';
 	}
   
   } 
