@@ -202,3 +202,15 @@ hr{
         width: 25vw;
     }
 }
+/* Class used when items are not being interchanged */
+.yellow{
+    color: yellow;
+}
+/* class used when items are being interchanged */
+.red{
+    color: red;
+}
+/* class used when elements are already sorted */
+.green{
+    color: green;
+}
