@@ -1,44 +1,30 @@
-window.onscroll = function (e) {  
-	const smallScreen = document.getElementById('sticky');
-	var pos =  document.documentElement.scrollTop
-	console.log("pos", pos)
-	if(pos < 700) {
-	  goRight()
-	  document.getElementById('small-screen').style.backgroundColor='green';
-	}
-	if(pos > 900) {
-		goLeft()
-		document.getElementById('small-screen').style.backgroundColor='red';
-
-	  }  
-	if(pos < 1400) {
-		goRight()
-		document.getElementById('small-screen').style.backgroundColor='Blue';
-
-	  }  
-	if(pos > 1265) {
-		goLeft()
-		document.getElementById('small-screen').style.backgroundColor='purple';
-	  }
-	if(pos > 2170) {
-		goRight()
-		document.getElementById('small-screen').style.backgroundColor='yellow';
-	  }
-	
-	if(pos > 2600) {
-	  goLeft()
-	  document.getElementById('small-screen').style.backgroundColor='brown';
-	}
-  
-  } 
-  function goRight() {
-	const el = document.getElementById('sticky');
-	el.style.transform = "skew(-7deg, 5deg)"
-	el.style.marginLeft = "60%"
-  }
-  function goLeft() {
-	const el = document.getElementById('sticky');
-	el.style.transform = "skew(7deg, -5deg)"
-	el.style.marginLeft = "0%"
-  }
-  
+document.addEventListener("DOMContentLoaded", () => {
+	let options = {
+	  root: null,
+	  rootMargin: "-200px -50px",
+	  threshold: 0.05
+	};
+	let observer = new IntersectionObserver(beTouching, options);
+	document.querySelectorAll(".container p").forEach(p => {
+	  observer.observe(p);
+	  console.log("watching", p.textContent);
+	});
+	document.querySelectorAll(".container h1").forEach(h1 => {
+		observer.observe(h1);
+		console.log("watching", h1.textContent);
+	});
+  });
+	  function beTouching(entries, ob) {
+        //entries all 6 paragraphs
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            console.log("intersecting");
+            console.log(entry.target);
+            //console.log(entry.time, entry.intersectionRatio);
+            entry.target.classList.add("active");
+            //ob.unobserve(entry.target);
+          } else {
+            entry.target.classList.remove("active");
+          }
+        });
+      }
